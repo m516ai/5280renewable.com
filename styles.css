@@ -38,7 +38,28 @@ h3{margin:0 0 10px}
   backdrop-filter: blur(8px);
 }
 
+/* =========================
+   UPDATED: Larger top title
+   ========================= */
 .brand{font-weight:700; letter-spacing:.3px}
+
+.brand-title{
+  display:flex;
+  align-items:center;
+}
+
+.brand-main{
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  background: linear-gradient(135deg, #ffffff 0%, #c9f3ff 45%, #7ee7ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 18px rgba(88, 215, 255, 0.25);
+}
+/* ========================= */
+
 .navlinks{display:flex; gap:14px; align-items:center}
 .navlinks a{color:var(--text); opacity:.9}
 .navlinks a:hover{opacity:1; text-decoration:none}
