@@ -1,0 +1,14 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "5280 Renewable",
+    "description": "",
+    "home_page_url": "file:///Users/mikeschoenecker/Documents/Publii/sites/5280-renewable/preview",
+    "feed_url": "file:///Users/mikeschoenecker/Documents/Publii/sites/5280-renewable/preview/feed.json",
+    "user_comment": "",
+    "icon": "file:///Users/mikeschoenecker/Documents/Publii/sites/5280-renewable/preview/media/website/logo-5280-renewable.jpg",
+    "author": {
+        "name": "Mike Schoenecker"
+    },
+    "items": [
+    ]
+}

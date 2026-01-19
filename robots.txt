@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: file:////Users/mikeschoenecker/Documents/Publii/sites/5280-renewable/preview/sitemap.xml

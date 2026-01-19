@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="file:////Users/mikeschoenecker/Documents/Publii/sites/5280-renewable/preview/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+<loc>file:////Users/mikeschoenecker/Documents/Publii/sites/5280-renewable/preview/</loc>
+</url>
+<url>
+<loc>file:////Users/mikeschoenecker/Documents/Publii/sites/5280-renewable/preview/about/</loc>
+<lastmod>2026-01-19T09:33:55-07:00</lastmod>
+</url>
+<url>
+<loc>file:////Users/mikeschoenecker/Documents/Publii/sites/5280-renewable/preview/contact/</loc>
+<lastmod>2026-01-19T09:17:07-07:00</lastmod>
+</url>
+<url>
+<loc>file:////Users/mikeschoenecker/Documents/Publii/sites/5280-renewable/preview/home/</loc>
+<lastmod>2026-01-19T14:03:22-07:00</lastmod>
+</url>
+<url>
+<loc>file:////Users/mikeschoenecker/Documents/Publii/sites/5280-renewable/preview/projects/</loc>
+<lastmod>2026-01-19T09:20:55-07:00</lastmod>
+</url>
+</urlset>
