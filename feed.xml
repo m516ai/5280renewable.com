@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>5280 Renewable</title>
-    <link href="feed.xml" rel="self" />
+    <link href="file:///Users/mikeschoenecker/Documents/Publii/sites/5280-renewable/preview/feed.xml" rel="self" />
     <link href="file:///Users/mikeschoenecker/Documents/Publii/sites/5280-renewable/preview" />
     <updated>1969-12-31T17:00:00-07:00</updated>
     <author>
