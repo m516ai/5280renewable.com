@@ -5,147 +5,49 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>5280 Renewable Holdings LLC</title>
 
-<style>
-* { margin:0; padding:0; box-sizing:border-box; }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:#0b0f14;
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    font-family:'Inter',sans-serif;
+    background:#0b0f14;
     color:#ffffff;
-    line-height:1.6;
+    scroll-behavior:smooth;
 }
 
-header {
+header{
     position:fixed;
+    top:0;
     width:100%;
-    background:rgba(0,0,0,0.8);
     padding:20px 60px;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    background:rgba(0,0,0,0.5);
+    backdrop-filter:blur(8px);
+    transition:background 0.4s ease;
     z-index:1000;
 }
-
-header img {
+header.scrolled{
+    background:#0b0f14;
+}
+header img{
     height:40px;
 }
-
-nav a {
-    color:#ffffff;
+nav a{
+    color:#fff;
     text-decoration:none;
     margin-left:30px;
     font-weight:500;
     letter-spacing:1px;
+    transition:opacity 0.3s ease;
+}
+nav a:hover{opacity:0.6}
+
+section{
+    padding:120px 10%;
+    position:relative;
 }
 
-.hero {
-    height:100vh;
-    background:url('assets/images/sunset-hero.jpg') center/cover no-repeat;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:0 20px;
-}
-
-.hero h1 {
-    font-size:56px;
-    background:rgba(0,0,0,0.65);
-    padding:20px 40px;
-}
-
-.section {
-    padding:100px 60px;
-}
-
-.section-dark {
-    background:#111821;
-}
-
-.section-light {
-    background:#0e141b;
-}
-
-.grid {
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
-    gap:40px;
-    margin-top:50px;
-}
-
-.card img {
-    width:100%;
-    border-radius:6px;
-}
-
-.card h3 {
-    margin-top:20px;
-    font-size:22px;
-}
-
-.card p {
-    margin-top:10px;
-    color:#b0b8c5;
-}
-
-footer {
-    background:#000;
-    padding:40px;
-    text-align:center;
-    font-size:14px;
-    color:#888;
-}
-</style>
-</head>
-
-<body>
-
-<header>
-    <img src="assets/images/logo-simple.jpg" alt="5280 Renewable">
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<section class="hero">
-    <h1>Infrastructure. Energy. Performance.</h1>
-</section>
-
-<section id="about" class="section section-dark">
-    <h2>About 5280 Renewable</h2>
-    <p style="max-width:800px; margin-top:20px;">
-        5280 Renewable Holdings LLC develops high-performance renewable energy infrastructure,
-        advanced thermal storage systems, and data center power solutions designed for long-term
-        operational efficiency and scalable deployment.
-    </p>
-</section>
-
-<section id="projects" class="section section-light">
-    <h2>Core Focus Areas</h2>
-
-    <div class="grid">
-
-        <div class="card">
-            <img src="assets/images/solar-utility.jpg" alt="Utility Solar">
-            <h3>Utility Scale Solar</h3>
-            <p>Large-scale photovoltaic deployments engineered for long-term PPA performance and grid integration.</p>
-        </div>
-
-        <div class="card">
-            <img src="assets/images/solar-rooftop.jpg" alt="Rooftop Solar">
-            <h3>Commercial & Rooftop Solar</h3>
-            <p>Distributed generation systems reducing OPEX while improving energy resilience.</p>
-        </div>
-
-        <div class="card">
-            <img src="assets/images/thermal-battery.jpg" alt="Thermal Storage">
-            <h3>Thermal Energy Storage</h3>
-            <p>Advanced thermal battery integration improving efficiency and load management across assets.</p>
-        </div>
-
-        <div class="card">
-            <img src="assets/images/datacenter-dark.jpg" alt="Datacenter Infrastructure">
-            <h3>Data Center Infrastructure</h3>
-            <p>Renewable-powered data center strategy with optimized cooling and energy performance.<
+.hero{
