@@ -18,6 +18,8 @@ body{
     overflow-x:hidden;
 }
 
+/* ================= HEADER ================= */
+
 header{
     position:fixed;
     width:100%;
@@ -30,12 +32,8 @@ header{
     transition:all .4s ease;
     z-index:1000;
 }
-header.scrolled{
-    background:#0b0f14;
-}
-header img{
-    height:38px;
-}
+header.scrolled{background:#0b0f14;}
+header img{height:38px;}
 nav a{
     color:#ffffff;
     text-decoration:none;
@@ -45,6 +43,8 @@ nav a{
     transition:opacity .3s ease;
 }
 nav a:hover{opacity:.6}
+
+/* ================= HERO ================= */
 
 .hero{
     height:100vh;
@@ -57,20 +57,17 @@ nav a:hover{opacity:.6}
     text-align:center;
     padding:0 20px;
 }
-
 .hero h1{
     font-size:64px;
     font-weight:700;
     max-width:1000px;
     line-height:1.1;
 }
-
 .hero p{
     margin-top:25px;
     font-size:20px;
     color:#c6ced8;
 }
-
 .button{
     margin-top:40px;
     display:inline-block;
@@ -85,11 +82,11 @@ nav a:hover{opacity:.6}
     color:#000;
 }
 
-section{
-    padding:140px 10%;
-}
+/* ================= SECTIONS ================= */
 
-.section-dark{background:#0e141b}
+section{padding:140px 10%;}
+.section-dark{background:#0e141b;}
+
 .section-gold{
     background:
     linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.8)),
@@ -97,10 +94,7 @@ section{
     text-align:center;
 }
 
-h2{
-    font-size:42px;
-    margin-bottom:30px;
-}
+h2{font-size:42px;margin-bottom:30px;}
 
 .grid{
     display:grid;
@@ -115,147 +109,7 @@ h2{
     border-radius:8px;
     transition:transform .4s ease;
 }
-.card:hover{
-    transform:translateY(-6px);
-}
-
-.card img{
-    width:100%;
-    border-radius:6px;
-}
-
-.card h3{
-    margin-top:20px;
-    font-size:22px;
-}
-
-.card p{
-    margin-top:12px;
-    color:#aab4c2;
-    line-height:1.6;
-}
-
-footer{
-    background:#000;
-    padding:60px 10%;
-    text-align:center;
-    font-size:14px;
-    color:#777;
-}
-
-/* Fade Animation */
-.reveal{
-    opacity:0;
-    transform:translateY(40px);
-    transition:all 1s ease;
-}
-.reveal.active{
-    opacity:1;
-    transform:translateY(0);
-}
-</style>
-</head>
-
-<body>
-
-<header>
-    <img src="assets/images/logo-simple.jpg">
-    <nav>
-        <a href="#platform">Platform</a>
-        <a href="#pipeline">Pipeline</a>
-        <a href="#capital">Capital</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<section class="hero">
-    <div>
-        <h1>Renewable Infrastructure. Engineered for Scale.</h1>
-        <p>Solar. Thermal Storage. Data Infrastructure. Built for institutional performance.</p>
-        <a href="#platform" class="button">Explore Platform</a>
-    </div>
-</section>
-
-<section id="platform" class="section-dark reveal">
-    <h2>Integrated Infrastructure Platform</h2>
-    <div class="grid">
-
-        <div class="card">
-            <img src="assets/images/solar-utility.jpg">
-            <h3>Utility-Scale Solar</h3>
-            <p>Large-scale photovoltaic development structured for long-term PPA-backed revenue and optimized land performance.</p>
-        </div>
-
-        <div class="card">
-            <img src="assets/images/thermal-battery.jpg">
-            <h3>Thermal Energy Storage</h3>
-            <p>Advanced thermal battery systems reducing cooling loads and increasing efficiency across data infrastructure assets.</p>
-        </div>
-
-        <div class="card">
-            <img src="assets/images/datacenter-dark.jpg">
-            <h3>Renewable-Powered Data Centers</h3>
-            <p>Integrated solar and storage strategies supporting high-density data center deployments.</p>
-        </div>
-
-    </div>
-</section>
-
-<section id="pipeline" class="section-dark reveal">
-    <h2>Active Development Pipeline</h2>
-    <p style="max-width:900px;">
-        5280 Renewable Holdings LLC is advancing renewable-powered infrastructure projects across Colorado and Wyoming,
-        including utility-scale solar, thermal-integrated data center systems, and strategic renewable expansion initiatives.
-    </p>
-</section>
-
-<section id="capital" class="section-dark reveal">
-    <h2>Bankable by Design</h2>
-    <p style="max-width:900px;">
-        EPC-led execution, performance-modeled financial structuring, and disciplined infrastructure planning position
-        each project for long-term operational performance and capital alignment.
-    </p>
-</section>
-
-<section class="section-gold reveal">
-    <h2>Infrastructure. Energy. Performance.</h2>
-</section>
-
-<section id="contact" class="section-dark reveal">
-    <h2>Contact</h2>
-    <p>
-        Partnership inquiries, capital discussions, and development collaboration:
-    </p>
-    <p style="margin-top:20px;font-weight:600;">
-        info@5280renewable.com
-    </p>
-</section>
-
-<footer>
-    5280 Renewable Holdings LLC<br>
-    Denver, Colorado<br><br>
-    info@5280renewable.com<br><br>
-    © 2026 5280 Renewable Holdings LLC. All Rights Reserved.
-</footer>
-
-<script>
-window.addEventListener('scroll',function(){
-    const header=document.querySelector('header');
-    header.classList.toggle('scrolled',window.scrollY>50);
-});
-
-const reveals=document.querySelectorAll('.reveal');
-window.addEventListener('scroll',()=>{
-    for(let i=0;i<reveals.length;i++){
-        const windowHeight=window.innerHeight;
-        const revealTop=reveals[i].getBoundingClientRect().top;
-        const revealPoint=150;
-        if(revealTop<windowHeight-revealPoint){
-            reveals[i].classList.add('active');
-        }
-    }
-});
-</script>
-
-</body>
-</html>
+.card:hover{transform:translateY(-6px);}
+.card img{width:100%;border-radius:6px;}
+.card h3{margin-top:20px;font-size:22px;}
+.card
